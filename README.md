@@ -1,6 +1,6 @@
 # handwriting-ocr-paddle
 Handwriting OCR project using PaddleOCR fine-tuned on custom data
-
+Note: new_augment12_11.py is a file to augmentation data handwritting
 data: https://drive.google.com/drive/folders/1nYS0FWFeao9CGqCPtt5mUS-mXni593B6?usp=sharing
 
 model:
