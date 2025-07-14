@@ -14,9 +14,12 @@ pip install -r requirements.txt
 ---
 ## ✅ 2. Cài phụ thuộc mở rộng
 ```bash
+#option để chat or traning
 pip install flash-attn==2.3.6 --no-build-isolation
+#cài đặt mmcv-full==1.6.2 cho tùy chọn segmentation
 pip install -U openmim
 mim install mmcv-full==1.6.2
+#cài dặt apex ( tùy chọn cho segmentation) 
 git clone https://github.com/NVIDIA/apex.git
 cd apex
 git checkout 2386a91
