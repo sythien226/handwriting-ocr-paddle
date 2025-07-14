@@ -45,7 +45,7 @@ huggingface-cli download --resume-download --local-dir-use-symlinks False OpenGV
     "data_augment": false,
     "max_dynamic_patch": 12,
     "repeat_time": 1,
-    "length": 1000
+    "length": "number of samples in the dataset"
   }
 }
 ```
@@ -66,6 +66,29 @@ wget http://images.cocodataset.org/zips/{train2014,val2014,test2015}.zip && unzi
 cd annotations
 wget https://storage.googleapis.com/sfr-vision-language-research/datasets/coco_karpathy_train.json
 wget https://github.com/OpenGVLab/InternVL/releases/download/data/coco_karpathy_test.json
+
+_______________________________________________________________________________________________
+After the download is complete, the directory structure is:
+data
+├── coco
+│   ├── annotations
+│   │   ├── coco_karpathy_train.json
+│   ├── test2017
+│   ├── train2014
+│   ├── train2017
+│   ├── val2014
+│   └── val2017
+├── flickr30k
+│   ├── flickr30k_cn_test.txt
+│   ├── flickr30k_cn_train.txt
+│   ├── flickr30k_test_karpathy.json
+│   ├── flickr30k_test_karpathy.txt
+│   ├── flickr30k_train_karpathy.txt
+│   ├── flickr30k_val_karpathy.txt
+│   └── Images
+└── nocaps
+    ├── images
+    └── nocaps_val_4500_captions.json
 ```
 **Bước 2: Thêm custom dataset**
 ```python
